@@ -1,10 +1,84 @@
-.header{
+@import "../Variables/variables.scss";
+
+.header {
+    height: 270px;
+    color: #fff;
+  @media screen and (max-width: 480px) {
     height: 200px;
-    background-color: red;
+  }
 }
-.header__title{
-    display:flex;
+.header__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 150px;
+      height: 40px;
+    }
+    h2 {
+      margin: 9px 0 0 10px;
+    }
+  @media screen and (max-width: 480px) {
+    img {
+      width: 100px;
+      height: 30px;
+    }
+  }
 }
-.header__value-button-block{
-    display:flex;
+.header__value-button-block {
+  @media screen and (min-width: 801px) {
+    display: flex;
+    span {
+      font-size: 24px;
+      span {
+        font-size: 10px;
+      }
+    }
+    button {
+      margin-left: 10px;
+      width: 100px;
+      border-radius: 5px;
+      background-color: $orangeColor;
+      color: #fff;
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    display: flex;
+    span {
+      font-size: 16px;
+      span {
+        font-size: 8px;
+      }
+    }
+    button {
+      margin-left: 10px;
+      width: 90px;
+      border-radius: 5px;
+      background-color: #eb7223;
+      color: #fff;
+      font-size: 10px;
+    }
+  }
+}
+.header__content-block {
+  @media screen and (min-width: 801px) {
+    width: 55%;
+    height: 90%;
+    padding: 20px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  @media screen and (max-width: 480px) {
+    width: 70%;
+    height: 90%;
+    padding: 20px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 10px;
+  }
 }
