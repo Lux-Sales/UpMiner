@@ -1,6 +1,8 @@
 .header {
   height: 270px;
   color: #fff;
+  margin-bottom: 2px;
+  border-bottom: 5px solid #eb7223;
 }
 
 @media screen and (max-width: 480px) {
@@ -53,7 +55,8 @@
     margin-left: 10px;
     width: 100px;
     border-radius: 5px;
-    background-color: #eb7223;
+    background-image: -webkit-gradient(linear, left top, right top, from(#eb7223), to(#ac4907));
+    background-image: linear-gradient(to right, #eb7223, #ac4907);
     color: #fff;
     font-size: 15px;
   }
@@ -75,7 +78,8 @@
     margin-left: 10px;
     width: 90px;
     border-radius: 5px;
-    background-color: #eb7223;
+    background-image: -webkit-gradient(linear, left top, right top, from(#eb7223), to(#ac4907));
+    background-image: linear-gradient(to right, #eb7223, #ac4907);
     color: #fff;
     font-size: 10px;
   }

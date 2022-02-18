@@ -6,7 +6,7 @@ import Dashboard from '../pages/Dashboard';
 const RoutesComponent = () => {
   return (
     <Routes>
-      <Route path="/" element={Dashboard} />
+      <Route path="/" element={<Dashboard/>} />
     </Routes>
   );
 }
