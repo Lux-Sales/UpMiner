@@ -7,4 +7,17 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.filter__label {
+  font-weight: bold;
+}
+
+.filter__label select {
+  margin-left: 15px;
+  width: 25vh;
+  height: 4vh;
+  border-radius: 4px;
+  margin-bottom: 2vh;
+  background-color: #fff;
+}
 /*# sourceMappingURL=dashboard.css.map */

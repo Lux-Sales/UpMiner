@@ -24,8 +24,8 @@ const Dashboard = () => {
     <>
     <Header />
     <CategoryMenu setFilter={setFilter} />
-        <label htmlFor="order_by">
-            Ordenar
+        <label htmlFor="order_by" className='filter__label'>
+            ORDENAR
             <select name="order_by" onChange={e => {
                 setOrder(e.target.value)
                 orderProducts(productCards, order)

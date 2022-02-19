@@ -73,11 +73,18 @@
 .product__card__footer span, .product__card__footer a {
   margin-top: 1.3vh;
   color: #fff;
-  text-decoration: none;
+  background-color: transparent;
+  border: none;
 }
 
 .product__card__footer span {
   font-size: 18px;
+}
+
+.product__card__footer a {
+  font-size: 16px;
+  margin-bottom: 6px;
+  cursor: pointer;
 }
 
 .product__card__footer a:hover {

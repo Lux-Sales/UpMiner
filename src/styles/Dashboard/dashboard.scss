@@ -3,3 +3,15 @@
     grid-template-columns: 20% 20% 20% 20%;
     justify-content: space-between;
 }
+
+.filter__label{
+font-weight: bold;
+select{
+    margin-left: 15px;
+    width: 25vh;
+    height: 4vh;
+    border-radius: 4px;     
+    margin-bottom: 2vh;
+    background-color: #fff;
+}
+}

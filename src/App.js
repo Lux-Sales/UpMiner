@@ -4,11 +4,9 @@ import './styles/global.css'
 
 function App() {
     return (
-        <>
-        <BrowserRouter>
-            <Routes />
-        </BrowserRouter>
-        </>
+            <BrowserRouter>
+                <Routes />
+            </BrowserRouter>
     );
 }
 
