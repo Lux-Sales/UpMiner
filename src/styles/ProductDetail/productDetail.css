@@ -26,13 +26,13 @@
   margin: 3vh 0;
 }
 
-.productDetail__title button {
+.productDetail__title a {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.productDetail__title button svg {
+.productDetail__title a svg {
   color: #eb7223;
 }
 
