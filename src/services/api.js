@@ -10,12 +10,16 @@ export const getCards = async () => {
         {
             id: 1,
             title: 'Profissional',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,1,1),
             description: '',
             value: 1
         },
         {
             id: 2,
             title: 'Reguladores',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,2,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -25,6 +29,8 @@ export const getCards = async () => {
         {
             id: 3,
             title: 'Sócio Ambiental',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,3,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -34,6 +40,8 @@ export const getCards = async () => {
         {
             id: 4,
             title: 'Jurídico',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,4,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -43,6 +51,8 @@ export const getCards = async () => {
         {
             id: 5,
             title: 'Listas Restritivas',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,5,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -52,6 +62,8 @@ export const getCards = async () => {
         {
             id: 6,
             title: 'Mídia / Internet',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,6,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -61,6 +73,8 @@ export const getCards = async () => {
         {
             id: 7,
             title: 'Bens e Imóveis',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,7,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -70,6 +84,8 @@ export const getCards = async () => {
         {
             id: 8,
             title: 'Cadastro',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,8,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -79,6 +95,8 @@ export const getCards = async () => {
         {
             id: 9,
             title: 'Financeiro',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,9,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -88,6 +106,8 @@ export const getCards = async () => {
         {
             id: 10,
             title: 'Financeiro',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,10,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -97,6 +117,8 @@ export const getCards = async () => {
         {
             id: 11,
             title: 'Sócio Ambiental',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,11,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -106,6 +128,8 @@ export const getCards = async () => {
         {
             id: 12,
             title: 'Jurídico',
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
+            createdAt: new Date(2021,12,1),
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -121,6 +145,7 @@ export const getBannerCards = async () =>{
             id: 8,
             title: 'Cadastro',
             bannerImage: BannerCadastro,
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -131,6 +156,7 @@ export const getBannerCards = async () =>{
             id: 13,
             title: 'Histórico Empresarial',
             bannerImage: BannerHistoricoEmpresarial,
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -141,6 +167,7 @@ export const getBannerCards = async () =>{
             id: 4,
             title: 'Jurídico',
             bannerImage: BannerJuridico,
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -151,6 +178,7 @@ export const getBannerCards = async () =>{
             id: 11,
             title: 'Sócio Ambiental',
             bannerImage: BannerSocioAmbiental,
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\
@@ -161,6 +189,7 @@ export const getBannerCards = async () =>{
             id: 12,
             title: 'Jurídico',
             bannerImage: BannerJuridico2,
+            detailImages: [BannerCadastro,BannerHistoricoEmpresarial,BannerJuridico,BannerJuridico2,BannerSocioAmbiental],
             description: "Lorem ipsum dolor sit amet consectetur\
                 adipisicing elit.Nisi fuga nam quos minus consequatur\
                 autem rerum necessitatibus exercitationem illum laboriosam,\

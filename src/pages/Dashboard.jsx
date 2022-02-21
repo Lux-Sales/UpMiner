@@ -15,7 +15,7 @@ const Dashboard = () => {
         const fetchCards = async () =>{
             const cards = await getCards()
             orderProducts(cards, order)
-            setProductCards(cards.reverse())
+            setProductCards(cards)
         }
         fetchCards()
     },[])
@@ -27,8 +27,8 @@ const Dashboard = () => {
         <label htmlFor="order_by" className='filter__label'>
             ORDENAR
             <select name="order_by" onChange={e => {
-                setOrder(e.target.value)
-                orderProducts(productCards, order)
+                    setOrder(e.target.value)
+                    orderProducts(productCards, e.target.value)
             }}>
                 <option value="value" defaultValue={true}>Preço</option>
                 <option value="createdAt">Lançamento</option>

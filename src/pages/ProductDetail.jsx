@@ -8,12 +8,21 @@ import Header from '../components/Header'
 
 const ProductDetail = () => {
     const [product, setProduct] = useState({})
+    const [current, setCurrent] = useState(0)
 
     useEffect(()=>{
         const bannerProductStoraged = JSON.parse(localStorage.getItem("@bannerProduct"))
         const productStoraged = JSON.parse(localStorage.getItem("@productDetail"))
         setProduct(productStoraged?productStoraged:bannerProductStoraged)
     },[])
+
+    const nextImage = () =>{
+        setCurrent(current == product.detailImages.length -1?0:current+1)
+    }
+
+    const previousImage = () =>{
+        setCurrent(current == product.detailImages.length -1?0:current-1)
+    }
 
   return (
       <>
@@ -29,11 +38,21 @@ const ProductDetail = () => {
       <h2>{product.title}</h2>
   </div>
   <div className='productDetail__banner'>
-      <button>
+      <button
+      onClick={previousImage}
+      >
       <ArrowBackIcon />
       </button>
-      <img src={detailImage} />
-      <button>
+      {
+        product.detailImages && product.detailImages.map((image, index) => {
+            return (
+            <img className={index === current ?"image__activated":"image__deactivated"}src={image} />
+            )
+        })
+      }
+      <button
+      onClick={nextImage}
+      >
       <ArrowForwardIcon />
       </button>
   </div>

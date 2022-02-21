@@ -94,4 +94,14 @@
   display: contents;
   color: red;
 }
+
+.image__activated {
+  position: relative;
+  min-width: 100vh;
+  min-height: 50vh;
+}
+
+.image__deactivated {
+  display: none;
+}
 /*# sourceMappingURL=productDetail.css.map */

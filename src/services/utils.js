@@ -12,10 +12,10 @@ import SavingsIcon from '@mui/icons-material/Savings';
 export const orderProducts = (productCards, order) => {
     productCards.sort((a, b) => {
         if (order == 'value') {
-            return a.value - b.value
+            return b.value - a.value
         }
         else {
-            return b.value - a.value
+            return b.createdAt - a.createdAt
         }
     })
 }
