@@ -1,4 +1,5 @@
-.header {
+.header__activated {
+  position: relative;
   height: 270px;
   color: #fff;
   margin-bottom: 2px;
@@ -6,9 +7,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .header {
+  .header__activated {
     height: 200px;
   }
+}
+
+.header__deactivated {
+  display: none;
 }
 
 .header__title {
@@ -39,27 +44,37 @@
   }
 }
 
-@media screen and (min-width: 801px) {
-  .header__value-button-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header__value-button-block span {
-    font-size: 24px;
-  }
-  .header__value-button-block span span {
-    font-size: 10px;
-  }
-  .header__value-button-block button {
-    margin-left: 10px;
-    width: 100px;
-    border-radius: 5px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#eb7223), to(#ac4907));
-    background-image: linear-gradient(to right, #eb7223, #ac4907);
-    color: #fff;
-    font-size: 15px;
-  }
+.header__value-button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__value-button-block span {
+  font-size: 24px;
+}
+
+.header__value-button-block span span {
+  font-size: 10px;
+}
+
+.header__value-button-block a {
+  margin-left: 10px;
+  width: 100px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#eb7223), to(#ac4907));
+  background-image: linear-gradient(to right, #eb7223, #ac4907);
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 0.7vh;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__value-button-block a:hover {
+  background-image: none;
+  background-color: #9a450e;
 }
 
 @media screen and (max-width: 480px) {
@@ -74,7 +89,7 @@
   .header__value-button-block span span {
     font-size: 8px;
   }
-  .header__value-button-block button {
+  .header__value-button-block a {
     margin-left: 10px;
     width: 90px;
     border-radius: 5px;
@@ -85,43 +100,27 @@
   }
 }
 
-@media screen and (min-width: 801px) {
-  .header__content-block {
-    width: 55%;
-    height: 90%;
-    padding: 20px 0 0 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
+.header__content-block {
+  width: 55%;
+  height: 90%;
+  padding: 20px 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media screen and (max-width: 480px) {
   .header__content-block {
     width: 70%;
-    height: 90%;
-    padding: 20px 0 0 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     font-size: 10px;
   }
 }

@@ -23,7 +23,7 @@ const ProductCard = (props) => {
         <p>{description}</p>
         </div>
         <footer className='product__card__footer'>
-            <span>R$ {value}</span>
+            <span>R$ {value && value.toFixed(2)}</span>
             <a href='/detail' onClick={handleRedirect}>
                 Saiba Mais
                 </a>

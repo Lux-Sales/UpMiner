@@ -23,6 +23,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #eb7223;
+  margin: 3vh 0;
 }
 
 .productDetail__title button {

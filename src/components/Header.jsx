@@ -1,22 +1,67 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../styles/Header/header.css';
-import Background from '../assets/banner-negocio.jpg'
 import upLexisLogo from '../assets/up-lexis-logo.png'
+import { getBannerCards } from '../services/api';
+
 const Header = () => {
+    const [bannerCards, setBannerCards] = useState([])
+    const [current, setCurrent] = useState(1)
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+  }
+    
+    const changeBanner = async () =>{
+      await sleep(3000)
+      if (current === bannerCards.length-1){
+        setCurrent(0)
+        }
+        else{
+          setCurrent(current + 1)
+        }
+      }
+      
+      
+      useEffect(()=>{
+        const fetchCards = async () => {
+          const cards = await getBannerCards()
+          setBannerCards(cards)
+        }
+        fetchCards()
+      },[])
+
+      useEffect(()=>{
+        changeBanner()
+      },[current])
+      
   return (
-    <div className="header" style={{backgroundImage: `url(${Background})`}}>
+      <>
+    {bannerCards.map((bannerCard, index) => {
+      return (
+        <div
+        key={bannerCard.id} 
+        className={index === current ?"header__activated":"header__deactivated"} style={{
+            backgroundImage: `url(${bannerCard.bannerImage})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '100% 100%'
+            }}>
       <div className='header__content-block'>
         <div className="header__title">
           <img src={upLexisLogo} alt="" />
-          <h2>Histórico Empresarial</h2>
+          <h2>{bannerCard.title}</h2>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate possimus modi illum dolores consequatur. Voluptas esse, nam, voluptatum dicta nisi, cupiditate iste vitae accusamus nihil cumque corrupti enim nobis?</p>
+        <p>{bannerCard.description}</p>
         <div className='header__value-button-block'>
-            <span><span>R$</span>40,00</span>
-            <button>Saiba Mais</button>
+            <span><span>R$</span>{bannerCard.value}</span>
+            <a href='/detail' onClick={()=>
+                localStorage.setItem('@bannerProduct',JSON.stringify(bannerCard))
+            }>Saiba Mais</a>
         </div>
       </div>
     </div>
+        )    
+    })}
+    </>
   );
 };
 

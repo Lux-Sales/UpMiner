@@ -1,6 +1,7 @@
 @import "../Variables/variables.scss";
 
-.header {
+.header__activated {
+    position: relative;
     height: 270px;
     color: #fff;
     margin-bottom: 2px;
@@ -9,6 +10,11 @@
     height: 200px;
   }
 }
+
+.header__deactivated{
+    display:none;
+}
+
 .header__title {
     display: flex;
     justify-content: center;
@@ -28,7 +34,6 @@
   }
 }
 .header__value-button-block {
-  @media screen and (min-width: 801px) {
     display: flex;
     span {
       font-size: 24px;
@@ -36,15 +41,22 @@
         font-size: 10px;
       }
     }
-    button {
+    a {
       margin-left: 10px;
       width: 100px;
       border-radius: 5px;
       background-image: $orangeGradient;
       color: #fff;
       font-size: 15px;
+      text-align: center;
+      padding-top: 0.7vh;
+      text-decoration: none;
+      cursor: pointer;
     }
-  }
+    a:hover{
+        background-image: none;
+        background-color: darken($orangeColor, 20%);
+    }
   @media screen and (max-width: 480px) {
     display: flex;
     span {
@@ -53,7 +65,7 @@
         font-size: 8px;
       }
     }
-    button {
+    a {
       margin-left: 10px;
       width: 90px;
       border-radius: 5px;
@@ -64,7 +76,6 @@
   }
 }
 .header__content-block {
-  @media screen and (min-width: 801px) {
     width: 55%;
     height: 90%;
     padding: 20px 0 0 30px;
@@ -72,15 +83,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-  }
   @media screen and (max-width: 480px) {
     width: 70%;
-    height: 90%;
-    padding: 20px 0 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
     font-size: 10px;
   }
 }
