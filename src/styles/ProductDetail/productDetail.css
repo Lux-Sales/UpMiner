@@ -1,6 +1,6 @@
 .productDetail__container {
-  width: 130vh;
-  margin: 0 30vh;
+  width: 100%;
+  padding: 0 15vw;
 }
 
 .productDetail__container img {
@@ -10,6 +10,15 @@
 .productDetail__container p {
   color: grey;
   margin: 6vh 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .productDetail__container {
+    width: 80%;
+  }
+  .productDetail__container p {
+    width: 80vw;
+  }
 }
 
 .productDetail__title {
@@ -85,9 +94,15 @@
 
 .productDetail__banner svg {
   height: 6vh;
-  width: 6vh;
+  width: 6vw;
   margin: 0 2vh;
   color: grey;
+}
+
+@media screen and (max-width: 480px) {
+  .productDetail__banner {
+    margin-left: 20vw;
+  }
 }
 
 .productDetail__banner--button-icon {
@@ -97,8 +112,8 @@
 
 .image__activated {
   position: relative;
-  min-width: 100vh;
-  min-height: 50vh;
+  min-width: 60vw;
+  min-height: 25vh;
 }
 
 .image__deactivated {

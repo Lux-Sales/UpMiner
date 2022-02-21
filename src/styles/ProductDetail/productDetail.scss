@@ -1,14 +1,20 @@
 @import '../Variables/variables.scss';
 
 .productDetail__container{
-    width: 130vh;
-    margin: 0 30vh;
+    width: 100%;
+    padding: 0 15vw;
     img{
         width: 100%;
     }
     p{
         color: grey;
         margin: 6vh 0px;
+    }
+    @media screen and (max-width: 480px){
+        width: 80%;
+        p{
+            width: 80vw;
+        }
     }
 }
 
@@ -61,9 +67,12 @@
     }
     svg{
         height: 6vh;
-        width: 6vh;
+        width: 6vw;
         margin: 0 2vh;
         color: grey;
+    }
+    @media screen and (max-width: 480px) {
+        margin-left: 20vw;
     }
 }
 
@@ -74,8 +83,8 @@
 
 .image__activated{
     position:relative;
-    min-width: 100vh;
-    min-height: 50vh;
+    min-width: 60vw;
+    min-height: 25vh;
 }
 
 .image__deactivated{
