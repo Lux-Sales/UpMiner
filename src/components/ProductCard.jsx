@@ -8,6 +8,7 @@ const ProductCard = (props) => {
     const {id, title, description, value} = product
 
     const handleRedirect = () =>{
+        localStorage.removeItem('@productDetail');
         localStorage.setItem("@productDetail",JSON.stringify(product));
     }
 

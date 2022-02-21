@@ -14,11 +14,16 @@
     align-items: center;
     height: 82%;
     p{
-        font-size: 11px;
+        font-size: 1.5vh;
         text-align: center;
         overflow: auto;
         color: grey;
-        padding: 0 10px 10px;
+        padding: 0 1vh 1vh;
+    }
+    @media screen and (max-width: 480px) {
+        p{
+            margin-top: 1.5vh;
+        }
     }
 }
 
@@ -37,8 +42,14 @@
     h3{
         margin-top: 1.5vh;
         font-weight: normal;
-        width: 25vh;
+        width: 150%;
         text-align: center;
+    }
+    @media screen and (max-width: 480px) {
+        h3{
+            margin-top: 0.3vh;
+            font-size: 2.5vh;
+        }
     }
 }
 
@@ -47,24 +58,26 @@
     background-image: $orangeGradient;
     display: flex;
     justify-content: space-between;
-    padding: 0 15px 0;
+    padding: 0 3vh 0;
 
     span,a{
         margin-top: 1.3vh;
         color: #fff;
         background-color: transparent;
         border: none;
-    }
-    span{
-        font-size: 18px;
+        font-size: 3vh;
     }
     a{
-        font-size: 16px;
-        margin-bottom: 6px;
         cursor: pointer;
         text-decoration: none;
     }
     a:hover{
         color: darken($orangeColor,30%);
+    }
+    @media screen and (max-width: 480px) {
+        padding: 0 0.5vh;
+        a,span{
+            font-size: 1.9vh;
+        }
     }
 }

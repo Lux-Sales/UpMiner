@@ -54,7 +54,10 @@ const Header = () => {
         <div className='header__value-button-block'>
             <span><span>R$</span>{bannerCard.value}</span>
             <a href='/detail' onClick={()=>
-                localStorage.setItem('@bannerProduct',JSON.stringify(bannerCard))
+                {
+                    localStorage.removeItem('@productDetail');
+                    localStorage.setItem("@productDetail",JSON.stringify(bannerCard))
+                }
             }>Saiba Mais</a>
         </div>
       </div>

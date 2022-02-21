@@ -2,12 +2,13 @@
 
 .header__activated {
     position: relative;
-    height: 270px;
+    height: 45vh;
     color: #fff;
     margin-bottom: 2px;
     border-bottom: 5px solid $orangeColor;
-  @media screen and (max-width: 480px) {
-    height: 200px;
+  @media screen and (max-width: 480px), screen and (max-height: 700px) {
+    width: 180vh;
+    height: 40vh;
   }
 }
 

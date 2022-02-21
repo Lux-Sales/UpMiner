@@ -22,13 +22,10 @@ const ProductDetail = () => {
     };
 
     useEffect(() => {
-        const bannerProductStoraged = JSON.parse(
-            localStorage.getItem('@bannerProduct'),
-        );
         const productStoraged = JSON.parse(
             localStorage.getItem('@productDetail'),
         );
-        setProduct(productStoraged ? productStoraged : bannerProductStoraged);
+        setProduct(productStoraged);
     }, []);
 
     return (
@@ -40,7 +37,6 @@ const ProductDetail = () => {
                         href="/"
                         onClick={() => {
                             localStorage.removeItem('@productDetail');
-                            localStorage.removeItem('@bannerProduct');
                         }}
                     >
                         <ArrowBackIosIcon />

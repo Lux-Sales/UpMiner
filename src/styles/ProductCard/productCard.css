@@ -22,11 +22,17 @@
 }
 
 .product__card__content p {
-  font-size: 11px;
+  font-size: 1.5vh;
   text-align: center;
   overflow: auto;
   color: grey;
-  padding: 0 10px 10px;
+  padding: 0 1vh 1vh;
+}
+
+@media screen and (max-width: 480px) {
+  .product__card__content p {
+    margin-top: 1.5vh;
+  }
 }
 
 .product__card__content--icon-title {
@@ -53,8 +59,15 @@
 .product__card__content--icon-title h3 {
   margin-top: 1.5vh;
   font-weight: normal;
-  width: 25vh;
+  width: 150%;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .product__card__content--icon-title h3 {
+    margin-top: 0.3vh;
+    font-size: 2.5vh;
+  }
 }
 
 .product__card__footer {
@@ -67,7 +80,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 15px 0;
+  padding: 0 3vh 0;
 }
 
 .product__card__footer span, .product__card__footer a {
@@ -75,20 +88,24 @@
   color: #fff;
   background-color: transparent;
   border: none;
-}
-
-.product__card__footer span {
-  font-size: 18px;
+  font-size: 3vh;
 }
 
 .product__card__footer a {
-  font-size: 16px;
-  margin-bottom: 6px;
   cursor: pointer;
   text-decoration: none;
 }
 
 .product__card__footer a:hover {
   color: #6b300a;
+}
+
+@media screen and (max-width: 480px) {
+  .product__card__footer {
+    padding: 0 0.5vh;
+  }
+  .product__card__footer a, .product__card__footer span {
+    font-size: 1.9vh;
+  }
 }
 /*# sourceMappingURL=productCard.css.map */
